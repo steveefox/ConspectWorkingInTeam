@@ -9,7 +9,7 @@
 
 struct Subject {
     var name: String
-    var topic: [Topic]
+    var topics: [Topic]
 }
 
 
