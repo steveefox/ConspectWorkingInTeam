@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Addition View Controller-->
+        <scene sceneID="jGr-Oh-vcv">
+            <objects>
+                <viewController id="0mW-jc-DxG" customClass="AdditionViewController" customModule="ConspectWorkingInTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TtZ-os-bnA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-8c-E9H">
+                                <rect key="frame" x="49.5" y="426" width="315" height="44"/>
+                                <color key="backgroundColor" name="blackMode"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bhJ-8c-E9H" secondAttribute="height" multiplier="50:7" id="oSH-Mw-mBx"/>
+                                </constraints>
+                                <color key="tintColor" name="whiteMode"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Понятненько"/>
+                                <connections>
+                                    <action selector="buttonApplyAction" destination="0mW-jc-DxG" eventType="touchUpInside" id="BKs-fM-7se"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pm-gS-Qyi">
+                                <rect key="frame" x="16" y="104" width="382" height="302"/>
+                                <color key="backgroundColor" name="whiteMode"/>
+                                <color key="tintColor" name="blackMode"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" name="blackMode"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-8t-Tzt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" name="whiteMode"/>
+                                <color key="tintColor" name="blackMode"/>
+                                <color key="barTintColor" name="whiteMode"/>
+                                <items>
+                                    <navigationItem title="Урок номер 7" id="rD2-lu-RsL">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nHO-Wo-csd">
+                                            <color key="tintColor" name="blackMode"/>
+                                            <connections>
+                                                <action selector="buttonCancel:" destination="0mW-jc-DxG" id="RJO-ZP-Ayr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWu-fn-WE0">
+                                <rect key="frame" x="49.5" y="372" width="315" height="34"/>
+                                <color key="backgroundColor" name="whiteMode"/>
+                                <color key="tintColor" name="blackMode"/>
+                                <color key="textColor" name="whiteMode"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svm-1a-QB2">
+                                <rect key="frame" x="16" y="104" width="382" height="302"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yk6-Y2-Dd7">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="157"/>
+                                        <color key="backgroundColor" name="whiteMode"/>
+                                        <color key="tintColor" name="blackMode"/>
+                                        <color key="textColor" name="blackMode"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrS-bl-C97">
+                                        <rect key="frame" x="0.0" y="174" width="382" height="128"/>
+                                        <color key="backgroundColor" name="whiteMode"/>
+                                        <color key="tintColor" name="blackMode"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" name="blackMode"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="whiteMode"/>
+                        <color key="tintColor" name="blackMode"/>
+                        <constraints>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="centerY" secondItem="TtZ-os-bnA" secondAttribute="centerY" id="3Md-id-ltc"/>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="top" secondItem="OWu-fn-WE0" secondAttribute="bottom" constant="20" id="4eJ-DM-smG"/>
+                            <constraint firstItem="dIM-8t-Tzt" firstAttribute="top" secondItem="H0J-Q2-hAB" secondAttribute="top" id="AfC-AS-XKG"/>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="top" secondItem="Svm-1a-QB2" secondAttribute="bottom" constant="20" id="KMV-mD-07c"/>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="top" secondItem="2Pm-gS-Qyi" secondAttribute="bottom" constant="20" id="LYu-rG-bvJ"/>
+                            <constraint firstItem="dIM-8t-Tzt" firstAttribute="trailing" secondItem="H0J-Q2-hAB" secondAttribute="trailing" id="MN8-Uw-953"/>
+                            <constraint firstItem="Svm-1a-QB2" firstAttribute="top" secondItem="dIM-8t-Tzt" secondAttribute="bottom" constant="16" id="Oap-mO-Ama"/>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="width" secondItem="TtZ-os-bnA" secondAttribute="height" multiplier="25:71" id="Qmf-vv-Pde"/>
+                            <constraint firstItem="2Pm-gS-Qyi" firstAttribute="top" secondItem="dIM-8t-Tzt" secondAttribute="bottom" constant="16" id="U7P-8P-cVf"/>
+                            <constraint firstItem="dIM-8t-Tzt" firstAttribute="leading" secondItem="H0J-Q2-hAB" secondAttribute="leading" id="Wsu-E6-ooY"/>
+                            <constraint firstItem="2Pm-gS-Qyi" firstAttribute="leading" secondItem="H0J-Q2-hAB" secondAttribute="leading" constant="16" id="avP-eF-eJI"/>
+                            <constraint firstItem="H0J-Q2-hAB" firstAttribute="trailing" secondItem="2Pm-gS-Qyi" secondAttribute="trailing" constant="16" id="fjq-cD-yTJ"/>
+                            <constraint firstItem="OWu-fn-WE0" firstAttribute="width" secondItem="bhJ-8c-E9H" secondAttribute="width" id="g47-Bp-qov"/>
+                            <constraint firstItem="bhJ-8c-E9H" firstAttribute="centerX" secondItem="TtZ-os-bnA" secondAttribute="centerX" id="hQW-bU-PP4"/>
+                            <constraint firstItem="Svm-1a-QB2" firstAttribute="leading" secondItem="H0J-Q2-hAB" secondAttribute="leading" constant="16" id="hYn-7C-DBP"/>
+                            <constraint firstItem="OWu-fn-WE0" firstAttribute="centerX" secondItem="TtZ-os-bnA" secondAttribute="centerX" id="lLE-gK-gYC"/>
+                            <constraint firstItem="H0J-Q2-hAB" firstAttribute="trailing" secondItem="Svm-1a-QB2" secondAttribute="trailing" constant="16" id="uAr-yi-8xB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H0J-Q2-hAB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="obX-s9-7PE"/>
+                    <connections>
+                        <outlet property="buttonApplyOutlet" destination="bhJ-8c-E9H" id="eB5-MA-QcD"/>
+                        <outlet property="discriptionStackView" destination="Svm-1a-QB2" id="rFO-pk-HCE"/>
+                        <outlet property="discriptionTextField" destination="Yk6-Y2-Dd7" id="KbE-xd-aJ8"/>
+                        <outlet property="discriptionTextViewOutlet" destination="nrS-bl-C97" id="41B-NH-OcH"/>
+                        <outlet property="subjectsTextField" destination="OWu-fn-WE0" id="gfA-rI-YWk"/>
+                        <outlet property="topicTextViewOutlet" destination="2Pm-gS-Qyi" id="V5Y-fB-AtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJt-CL-ag1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="129.92957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blackMode">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteMode">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -17,7 +17,7 @@ protocol DescriptionViewControllerDelegate {
 
 class DescriptionViewController: UIViewController {
 
-    var subjects: [Subject] =  [swiftBook, russianLanguge]
+    var subjects: [Subject] =  []
     
 
     var indexOfSubjects: Int!
